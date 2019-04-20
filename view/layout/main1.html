@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- 引入包包含其他的link引用 -->
+     {{include '../particals/linker.html'}}
+</head>
+
+<body>
+
+     <!-- 页面头部的引用 -->
+     {{include '../particals/header.html'}}
+     <!--内容流程 -->
+     {{block 'content'}}{{/content}}
+     <!-- 底部(包含其他页面include) -->
+     {{include '../particals/footer.html' }}
+</body>
+
+</html>
